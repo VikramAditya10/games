@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<canvas id="canvas" width="300" height="300"></canvas>
+  </body>
+  <script type="text/javascript">
+    const canvas = document.getElementById("canvas");
+    const context = canvas.getContext("2d");
+    context.beginPath();
+    context.rect(160, 10, 100, 40);
+    context.strokestyle = "rgba(0,0,255,0.5)";
+    context.stroke();
+    context.closePath();
+  </script>
+</html>

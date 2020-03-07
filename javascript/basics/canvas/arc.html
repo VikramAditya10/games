@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <canvas id="canvas" width="300" height="300"></canvas>
+  </body>
+  <script type="text/javascript">
+    const canvas = document.getElementById("canvas");
+    const context = canvas.getContext("2d");
+    context.beginPath();
+    context.arc(240, 160, 20, 0, Math.PI*2/*360 dgree for circle*/, false);
+    context.fillStyle = "Green";
+    context.fill();
+    context.closePath();
+  </script>
+</html>
