@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body><canvas id="canvas" width="300" height="300">
+
+  </canvas>
+
+  </body>
+  <script type="text/javascript">
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+
+    ctx.beginPath();
+    ctx.ellipse(200, 200, 50, 75, Math.PI / 4, 0, 2 * Math.PI);
+    ctx.stroke();
+
+    ctx.fillStyle = 'red';
+  ctx.beginPath();
+  ctx.ellipse(60, 75, 50, 30, Math.PI * .25, 0, Math.PI * 1.5);
+  ctx.fill();
+
+  ctx.fillStyle = 'blue';
+  ctx.beginPath();
+  ctx.ellipse(150, 75, 50, 30, Math.PI * .25, 0, Math.PI);
+  ctx.fill();
+
+  ctx.fillStyle = 'green';
+  ctx.beginPath();
+  ctx.ellipse(240, 75, 50, 30, Math.PI * .25, 0, Math.PI, true);
+  ctx.fill();
+  </script>
+</html>
